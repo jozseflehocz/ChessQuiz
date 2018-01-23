@@ -25,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Checks if the first answer is Queen, or queen. The return value will be added to the score
+     *
      * @param valueToCompare
      * @param editTextValue
      * @return 1 in case of good answer, otherwise 0
      */
     private int checkEditText(String valueToCompare, String editTextValue) {
-         if (valueToCompare.equals(editTextValue.toLowerCase())) {
+        if (valueToCompare.equals(editTextValue.toLowerCase())) {
             return 1;
         }
         return 0;
@@ -38,10 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Checks if the 64 is checked. The return value will be added to the score
+     *
      * @return 1 in case of good answer, otherwise 0
      */
     private int checkSecondQuestion() {
-        RadioButton radioButton= (RadioButton) (findViewById(R.id.radio_Button_2));
+        RadioButton radioButton = (RadioButton) (findViewById(R.id.radio_Button_2));
         if (radioButton.isChecked()) {
             return 1;
         }
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Checks if the first three checkbox is selected and the fourth one is not selected.
      * The return value will be added to the score.
+     *
      * @return 1 in case of good answer, otherwise 0
      */
     private int checkThirdQuestion() {
@@ -69,62 +72,63 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calculates the final score, and displays the grading using a toast.
      * The toast is displayed via custom_toast separate xml.
+     *
      * @param view
      */
     public void grading(View view) {
 
         int score = 0;
         int subScore = 0;
-        String message="";
+        String message = "";
         EditText editText;
         String answer;
 
         //Check the result of the first question
-        editText= (EditText) (findViewById(R.id.editText_Question_1));
-        answer= editText.getText().toString();
-        subScore=checkEditText(getString(R.string._queen),answer);
-        if (subScore==1) {
-            message+=getString(R.string._answer_1_is_good);
-            score +=subScore;
-        }else{
-            message+=getString(R.string._answer_1_is_wrong);
+        editText = (EditText) (findViewById(R.id.editText_Question_1));
+        answer = editText.getText().toString();
+        subScore = checkEditText(getString(R.string._queen), answer);
+        if (subScore == 1) {
+            message += getString(R.string._answer_1_is_good);
+            score += subScore;
+        } else {
+            message += getString(R.string._answer_1_is_wrong);
         }
 
         //Check the result of the second question
-        subScore=checkSecondQuestion();
-        if (subScore==1) {
-            message+="\n"+getString(R.string._answer_2_is_good);
-            score +=subScore;
-        }else{
-            message+="\n"+getString(R.string._answer_2_is_wrong);
+        subScore = checkSecondQuestion();
+        if (subScore == 1) {
+            message += "\n" + getString(R.string._answer_2_is_good);
+            score += subScore;
+        } else {
+            message += "\n" + getString(R.string._answer_2_is_wrong);
         }
 
         //Check the result of the third question
-        subScore=checkThirdQuestion();
-        if (subScore==1) {
-            message+="\n"+getString(R.string._answer_3_is_good);
-            score +=subScore;
-        }else{
-            message+="\n"+getString(R.string._answer_3_is_wrong);
+        subScore = checkThirdQuestion();
+        if (subScore == 1) {
+            message += "\n" + getString(R.string._answer_3_is_good);
+            score += subScore;
+        } else {
+            message += "\n" + getString(R.string._answer_3_is_wrong);
         }
 
         //Check the result of the fourth question
-        editText= (EditText) (findViewById(R.id.editText_Question_4));
-        answer= editText.getText().toString();
+        editText = (EditText) (findViewById(R.id.editText_Question_4));
+        answer = editText.getText().toString();
 
-        subScore=checkEditText(getString(R.string._h6),answer);
-        if (subScore==1) {
-            message+="\n"+getString(R.string._answer_4_is_good);
-            score +=subScore;
-        }else{
-            message+="\n"+getString(R.string._answer_4_is_wrong);
+        subScore = checkEditText(getString(R.string._h6), answer);
+        if (subScore == 1) {
+            message += "\n" + getString(R.string._answer_4_is_good);
+            score += subScore;
+        } else {
+            message += "\n" + getString(R.string._answer_4_is_wrong);
         }
 
         // Add final grade to the message
-        if (score==4){
-            message+="\n\n"+getString(R.string._congratulations_perfect);
-        }else{
-            message+="\n\n"+getString(R.string._your_score_is)+score+getString(R.string._of_4)+"\n"+getString(R.string._try_it_again);
+        if (score == 4) {
+            message += "\n\n" + getString(R.string._congratulations_perfect);
+        } else {
+            message += "\n\n" + getString(R.string._your_score_is) + score + getString(R.string._of_4) + "\n" + getString(R.string._try_it_again);
         }
 
         //Display toast

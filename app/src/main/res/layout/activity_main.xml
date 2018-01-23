@@ -12,24 +12,24 @@
             android:id="@+id/layout_Question_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView_Question_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/_1_what_is_the_name_of_the_strongest_piece_in_chess" />
+                android:text="@string/_1_what_is_the_name_of_the_strongest_piece_in_chess"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/editText_Question_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:hint="@string/king_queen_rook_bishop_knight_or_pawn"/>
+                android:hint="@string/king_queen_rook_bishop_knight_or_pawn"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -37,10 +37,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layout_Question_1"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/layout_Question_2"
@@ -54,8 +54,8 @@
                     android:id="@+id/textView_Question_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="@string/_2_how_many_fields_are_on_the_board" />
+                    android:text="@string/_2_how_many_fields_are_on_the_board"
+                    android:textSize="16sp" />
 
                 <RadioGroup
                     android:id="@+id/radio_Group"
@@ -66,29 +66,29 @@
                         android:id="@+id/radio_Button_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="@string/_32"/>
+                        android:text="@string/_32"
+                        android:textSize="14sp" />
 
                     <RadioButton
                         android:id="@+id/radio_Button_2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="@string/_64"/>
+                        android:text="@string/_64"
+                        android:textSize="14sp" />
 
                     <RadioButton
                         android:id="@+id/radio_Button_3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="@string/_16"/>
+                        android:text="@string/_16"
+                        android:textSize="14sp" />
 
                     <RadioButton
                         android:id="@+id/radio_Button_4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:text="@string/_256"/>
+                        android:text="@string/_256"
+                        android:textSize="14sp" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -102,44 +102,44 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
-                android:layout_weight="1"
                 android:layout_marginLeft="12dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView_Question_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="@string/_3_what_can_be_the_result_of_the_game" />
+                    android:text="@string/_3_what_can_be_the_result_of_the_game"
+                    android:textSize="16sp" />
 
                 <CheckBox
                     android:id="@+id/checkBox_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="@string/_1_0_white_wins" />
+                    android:text="@string/_1_0_white_wins"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkBox_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="@string/_0_1_black_wins" />
+                    android:text="@string/_0_1_black_wins"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkBox_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="@string/_0_5_0_5_draw" />
+                    android:text="@string/_0_5_0_5_draw"
+                    android:textSize="14sp" />
 
                 <CheckBox
                     android:id="@+id/checkBox_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:text="@string/_0_0_no_one_wins" />
+                    android:text="@string/_0_0_no_one_wins"
+                    android:textSize="14sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -148,39 +148,40 @@
             android:id="@+id/layout_Question_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_below="@+id/layout_Question_23"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView_Question_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="@string/_4_what_should_white_move_to_achieve_draw" />
+                android:text="@string/_4_what_should_white_move_to_achieve_draw"
+                android:textSize="16sp" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/question4"/>
+                android:src="@drawable/question4" />
 
             <EditText
                 android:id="@+id/editText_Question_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/enter_the_first_move_only"
                 android:inputType="textMultiLine"
-                android:textSize="14sp"
-                android:hint="@string/enter_the_first_move_only"/>
+                android:textSize="14sp" />
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layout_Question_4"
-            android:text="@string/grading"
-            android:onClick="grading"
             android:layout_centerInParent="true"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:onClick="grading"
+            android:text="@string/grading" />
     </RelativeLayout>
 </ScrollView>
