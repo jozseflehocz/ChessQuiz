@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sakk teszt</string>
+    <string name="_1_what_is_the_name_of_the_strongest_piece_in_chess">1. Melyik a legerősebb figura a sakkban?</string>
+    <string name="king_queen_rook_bishop_knight_or_pawn">király,vezér, bástya,futó, huszár, vagy gyalog</string>
+    <string name="_2_how_many_fields_are_on_the_board">2. Hány mező van a sakktáblán?</string>
+    <string name="_32">32</string>
+    <string name="_64">64</string>
+    <string name="_16">16</string>
+    <string name="_256">256</string>
+    <string name="_3_what_can_be_the_result_of_the_game">3. Mi lehet a játszma eredménye?</string>
+    <string name="_1_0_white_wins">1-0 (világos nyert)</string>
+    <string name="_0_1_black_wins">0-1 (sötét nyert)</string>
+    <string name="_0_5_0_5_draw">0,5-0,5 (döntetlen)</string>
+    <string name="_0_0_no_one_wins">0-0 (senki sem nyert)</string>
+    <string name="_4_what_should_white_move_to_achieve_draw">4. Mit kell világosnak lépnie a döntetlenhez?</string>
+    <string name="enter_the_first_move_only">Csak az első lépés szükséges</string>
+    <string name="grading">Osztályzat</string>
+    <string name="_answer_1_is_good">Az első válasz helyes.</string>
+    <string name="_answer_2_is_good">A második válasz helyes.</string>
+    <string name="_queen">vezér</string>
+    <string name="_answer_3_is_good">A harmadik válasz helyes.</string>
+    <string name="_answer_4_is_good">A negyedik válasz helyes.</string>
+    <string name="_answer_4_is_wrong">A negyedik válasz helytelen.</string>
+    <string name="_answer_3_is_wrong">A harmadik válasz helytelen.</string>
+    <string name="_answer_2_is_wrong">A második válasz helytelen.</string>
+    <string name="_answer_1_is_wrong">Az első válasz helytelen.</string>
+    <string name="_h6">h6</string>
+    <string name="_congratulations_perfect">Gratulálunk, tökéletes!</string>
+    <string name="_your_score_is">"Az elért pontszám: "</string>
+    <string name="_of_4">" a 4-ből."</string>
+    <string name="_try_it_again">Próbáld meg ismét!</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Chess Quiz</string>
+    <string name="_1_what_is_the_name_of_the_strongest_piece_in_chess">1. What is the name of the strongest piece in chess?</string>
+    <string name="king_queen_rook_bishop_knight_or_pawn">King, Queen, Rook, Bishop, Knight, or pawn</string>
+    <string name="_2_how_many_fields_are_on_the_board">2. How many fields are on the board?</string>
+    <string name="_32">32</string>
+    <string name="_64">64</string>
+    <string name="_16">16</string>
+    <string name="_256">256</string>
+    <string name="_3_what_can_be_the_result_of_the_game">3. What can be the result of the game?</string>
+    <string name="_1_0_white_wins">1-0 (white wins)</string>
+    <string name="_0_1_black_wins">0-1 (black wins)</string>
+    <string name="_0_5_0_5_draw">0,5-0,5 (draw)</string>
+    <string name="_0_0_no_one_wins">0-0 (no one wins)</string>
+    <string name="_4_what_should_white_move_to_achieve_draw">4. What should white move to achieve draw?</string>
+    <string name="enter_the_first_move_only">Enter the first move only.</string>
+    <string name="grading">Grading</string>
+    <string name="_answer_1_is_good">Answer 1 is good.</string>
+    <string name="_queen">queen</string>
+    <string name="_answer_1_is_wrong">Answer 1 is wrong.</string>
+    <string name="_answer_2_is_good">Answer 2 is good.</string>
+    <string name="_answer_2_is_wrong">Answer 2 is wrong.</string>
+    <string name="_answer_3_is_good">Answer 3 is good.</string>
+    <string name="_answer_3_is_wrong">Answer 3 is wrong.</string>
+    <string name="_h6">h6</string>
+    <string name="_answer_4_is_good">Answer 4 is good.</string>
+    <string name="_answer_4_is_wrong">Answer 4 is wrong.</string>
+    <string name="_congratulations_perfect">Congratulations, perfect!</string>
+    <string name="_your_score_is">"Your score is: "</string>
+    <string name="_of_4">of 4.</string>
+    <string name="_try_it_again">Try it again!</string>
+</resources>
