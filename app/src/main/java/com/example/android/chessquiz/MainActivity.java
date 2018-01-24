@@ -17,10 +17,27 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editText1;
+    EditText editText2;
+    RadioButton radioButton;
+    CheckBox checkBox1;
+    CheckBox checkBox2;
+    CheckBox checkBox3;
+    CheckBox checkBox4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        editText1 = (EditText) (findViewById(R.id.editText_Question_1));
+        editText2 = (EditText) (findViewById(R.id.editText_Question_4));
+        radioButton = (RadioButton) (findViewById(R.id.radio_Button_2));
+        checkBox1 = (CheckBox) findViewById(R.id.checkBox_1);
+        checkBox2 = (CheckBox) findViewById(R.id.checkBox_2);
+        checkBox3 = (CheckBox) findViewById(R.id.checkBox_3);
+        checkBox4 = (CheckBox) findViewById(R.id.checkBox_4);
+
     }
 
     /**
@@ -43,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 in case of good answer, otherwise 0
      */
     private int checkSecondQuestion() {
-        RadioButton radioButton = (RadioButton) (findViewById(R.id.radio_Button_2));
         if (radioButton.isChecked()) {
             return 1;
         }
@@ -57,11 +73,6 @@ public class MainActivity extends AppCompatActivity {
      * @return 1 in case of good answer, otherwise 0
      */
     private int checkThirdQuestion() {
-
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkBox_1);
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkBox_2);
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.checkBox_3);
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.checkBox_4);
 
         if (checkBox1.isChecked() && checkBox2.isChecked() && checkBox3.isChecked() && !checkBox4.isChecked()) {
             return 1;
@@ -80,12 +91,11 @@ public class MainActivity extends AppCompatActivity {
         int score = 0;
         int subScore = 0;
         String message = "";
-        EditText editText;
         String answer;
 
         //Check the result of the first question
-        editText = (EditText) (findViewById(R.id.editText_Question_1));
-        answer = editText.getText().toString();
+
+        answer = editText1.getText().toString();
         subScore = checkEditText(getString(R.string._queen), answer);
         if (subScore == 1) {
             message += getString(R.string._answer_1_is_good);
@@ -113,8 +123,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Check the result of the fourth question
-        editText = (EditText) (findViewById(R.id.editText_Question_4));
-        answer = editText.getText().toString();
+        answer = editText2.getText().toString();
 
         subScore = checkEditText(getString(R.string._h6), answer);
         if (subScore == 1) {
